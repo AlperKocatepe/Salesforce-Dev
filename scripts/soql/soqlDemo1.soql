@@ -1,0 +1,9 @@
+select ID, Name, Phone from Account
+
+select id, name, phone, active__c, createddate from account order by createddate desc
+
+select id, name, project_name__c, status__c from salesforce_project__c where status__c = 'New'
+
+select id, name, phone, accountNumber, website from account where (phone != null or website != null) and accountNumber != null
+
+select id, Name, Priority__c, Status__c, Subject__c from Salesforce_Ticket__c where Status__c != '' and Priority__c = 'high'
